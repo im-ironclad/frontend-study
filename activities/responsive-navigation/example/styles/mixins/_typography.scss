@@ -1,0 +1,36 @@
+// https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+@mixin font-size-rem($size: 1.6, $lineHeight: 2.4) {
+  font-size: ($size * 10) + px;
+  font-size: $size + rem;
+  line-height: ($lineHeight * 10) + px;
+  line-height: $lineHeight + rem;
+}
+
+@mixin font($size) {
+  letter-spacing: 1px;
+  font-weight: $font-regular;
+
+  @if ($size=="heading-lg") {
+    @include font-size-rem(3.0, 4.0);
+    font-weight: $font-bold;
+    @media (min-width: $screen-sm-min) {
+      @include font-size-rem(3.6, 4.4);
+    }
+  }
+  @if ($size=="heading") {
+    @include font-size-rem(2.4, 3.2);
+    @media (min-width: $screen-sm-min) {
+      @include font-size-rem(2.8, 3.6);
+    }
+  }
+  @if ($size=="heading-sm") {
+    @include font-size-rem(2.0, 2.8);
+    @media (min-width: $screen-sm-min) {
+      @include font-size-rem(2.4, 3.2);
+    }
+  }
+  @else if ($size=="body") {
+    @include font-size-rem(1.6, 2.4);
+  }
+}

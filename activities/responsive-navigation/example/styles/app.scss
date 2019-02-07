@@ -1,0 +1,20 @@
+/**
+ * Entry point:
+ * styles/App.scss
+ * 
+ * Based off of ITCSS Architecture with a few personal changes: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ */
+@import "settings/variables";
+
+// Others must come after layout in order to call layout mixins
+@import "mixins/layout";
+@import "mixins/animations";
+@import "mixins/typography";
+
+// Set/Reset generic things
+@import "generic/reset";
+@import "generic/fonts";
+@import "generic/elements";
+
+// Order alphabetically
+@import "components/nav";

@@ -1,0 +1,94 @@
+// DELETE ME IF YOU DON'T WANT A MAIN COMPONENT
+$className: 'nav';
+
+.#{$className} {
+  min-width: 320px;
+  height: 100px;
+  color: $color-white;
+  background-color: $color-grey-dark;
+
+  &__trigger {
+    @include centerer(false, true);
+    cursor: pointer;
+    left: 5%;
+    z-index: 3;
+    appearance: none;
+    outline: 0;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    // border: 1px solid red;
+
+    @media only screen and (min-width: 500px) {
+      display: none;
+    }
+
+    &:checked ~ .nav__hamburger span {
+      transition: transform ease-in-out 0.3s;
+      
+      // Selects middle (2nd) span
+      &:nth-of-type(2) {
+        display: none;
+      }
+
+      // Transform 1st and 3rd
+      &:nth-of-type(1) {
+        transform: translateY(150%) rotate(45deg);
+      }
+
+      &:nth-of-type(3) {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+
+    &:checked ~ .nav__cont {
+      display: block;
+    }
+  }
+
+  &__hamburger {
+    @include centerer(false, true);
+    cursor: pointer;
+    left: 5%;
+    width: 25px;
+    height: 25px;
+
+    @media only screen and (min-width: 500px) {
+      display: none;
+    }
+
+    & span {
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: $color-grey;
+
+      &:not(:first-of-type) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__cont {
+    @include container("md");
+    display: none;
+    height: 100%;
+
+    @media only screen and (min-width: 500px) {
+      display: block;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      height: inherit;
+
+      &__item {
+
+        &:not(:first-of-type) {
+          margin-left: $spacing-lg;
+        }
+      }
+    }
+  }
+}
