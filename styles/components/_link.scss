@@ -1,0 +1,22 @@
+$className: "link";
+
+.#{$className} {
+  position: relative;
+  padding: 2px;
+
+  &:after {
+    @include absolute($top: 0, $left: 0);
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $color-primary;
+    transform: scaleY(0.1);
+    transform-origin: 0 100%;
+    transition: transform ease-in-out 0.2s;
+  }
+
+  &:hover:after {
+    transform: scaleY(1);
+  }
+}
