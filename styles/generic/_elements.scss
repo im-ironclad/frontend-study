@@ -87,3 +87,7 @@ h1 {
 h2 {
   @include font("heading");
 }
+
+h3 {
+  @include font("heading-sm")
+}

@@ -4,4 +4,8 @@ $className: 'main';
 .#{$className} {
   @include container("sm");
   padding-top: $spacing-lg;
+
+  & section:not(:last-of-type) {
+    margin-bottom: $spacing-lg;
+  }
 }

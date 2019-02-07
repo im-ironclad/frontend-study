@@ -12,13 +12,19 @@
   font-weight: $font-regular;
 
   @if ($size=="heading-lg") {
-    @include font-size-rem(2.6, 3.4);
+    @include font-size-rem(3.0, 4.0);
     font-weight: $font-bold;
     @media (min-width: $screen-sm-min) {
-      @include font-size-rem(3.0, 3.8);
+      @include font-size-rem(3.6, 4.4);
     }
   }
   @if ($size=="heading") {
+    @include font-size-rem(2.4, 3.2);
+    @media (min-width: $screen-sm-min) {
+      @include font-size-rem(2.8, 3.6);
+    }
+  }
+  @if ($size=="heading-sm") {
     @include font-size-rem(2.0, 2.8);
     @media (min-width: $screen-sm-min) {
       @include font-size-rem(2.4, 3.2);
