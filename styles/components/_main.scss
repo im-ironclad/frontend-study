@@ -1,0 +1,7 @@
+// DELETE ME IF YOU DON'T WANT A MAIN COMPONENT
+$className: 'main';
+
+.#{$className} {
+  @include container("sm");
+  padding-top: $spacing-lg;
+}

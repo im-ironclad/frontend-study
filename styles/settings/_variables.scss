@@ -1,0 +1,45 @@
+// TODO: Think about things like button/input height. Where does it belong? May be project specific
+
+/* Breakpoints */
+$screen-sm-min: 768px;
+$screen-xs-max: $screen-sm-min - 1;
+$screen-md-min: 992px;
+$screen-sm-max: $screen-md-min - 1;
+$screen-lg-min: 1250px;
+$screen-md-max: $screen-lg-min - 1;
+$screen-xl-min: 1500px;
+$screen-lg-max: $screen-xl-min - 1;
+
+/* Spacing */
+$spacing-xs: 10px;
+$spacing-sm: 20px;
+$spacing-md: 40px;
+$spacing-lg: 80px;
+$spacing-xl: 120px;
+
+/* Layout */
+$min-page-width: 320px;
+$max-page-width: 1900px;
+$gutter-sm: 5%;
+$gutter-md: 10%;
+$gutter-lg: 20%;
+$width-sm: 1000px;
+$width-md: 1200px;
+$width-lg: 1440px;
+$max-width-lg: 90%;
+$max-width-md: 80%;
+$max-width-sm: 60%;
+
+/* Colors */
+$color-white: #ffffff;
+$color-black: #000000;
+$color-offwhite: #f2f2f2;
+$color-grey: #777777;
+$color-grey-dark: #444444;
+
+/* Font */
+$font-family-primary: Helvetica, Arial, sans-serif;
+$font-light: 200;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
