@@ -57,13 +57,15 @@ $className: 'nav';
       }
 
       & .nav__cont__list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        @media only screen and (max-width: 500px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
 
-        & .nav__cont__list__item {
-          margin-left: 0;
-          margin-bottom: 20px;
+          & .nav__cont__list__item {
+            margin-left: 0;
+            margin-bottom: 20px;
+          }
         }
       }
     }
