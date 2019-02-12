@@ -36,8 +36,11 @@
     </nav>
   </header>
 
+  <!-- This script is entirely progressive. It is not necessary for the navbar to work but makes it a tad more full-proof and responsive while keeping the functionality within CSS -->
   <script>
     // var trigger = document.querySelector('.nav__trigger');
+    // var timeout = false;
+    // var delay = 250;
 
     // var resetTriggerStatus = function(currentWidth) {
     //   if (currentWidth > 500 && trigger.checked === true) {
@@ -46,8 +49,11 @@
     // }
 
     // window.addEventListener('resize', function(e) {
-    //   var currentWidth = e.target.innerWidth;
-    //   resetTriggerStatus(currentWidth);
+    //   clearTimeout(timeout);
+    //   timeout = setTimeout(function() {
+    //     var currentWidth = e.target.innerWidth;
+    //     resetTriggerStatus(currentWidth);
+    //   }, delay);
     // })
   </script>
 </body>
