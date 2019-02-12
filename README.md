@@ -1,6 +1,6 @@
 # Summary
 
-A repository or small-medium frontend projects to study & re-create for practice using semantics and html & css best practices and tricks
+A repository of small-medium frontend projects to study & re-create for practice using semantics and html & css best practices and tricks
 
 ## Useful Links
 
