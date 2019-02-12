@@ -17,18 +17,21 @@ $className: 'nav';
     width: 25px;
     height: 25px;
     margin: 0;
-    // border: 1px solid red;
 
     @media only screen and (min-width: 500px) {
       display: none;
     }
 
+    & ~ .nav__hamburger span {
+      transition: all ease-in-out 0.3s;
+    }
+
     &:checked ~ .nav__hamburger span {
-      transition: transform ease-in-out 0.3s;
-      
       // Selects middle (2nd) span
       &:nth-of-type(2) {
+        opacity: 0;
         display: none;
+        transition-delay: display 0.2s;
       }
 
       // Transform 1st and 3rd
@@ -42,7 +45,27 @@ $className: 'nav';
     }
 
     &:checked ~ .nav__cont {
-      display: block;
+      @media only screen and (max-width: 500px) {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 5%;
+        color: black;
+      }
+
+      & .nav__cont__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & .nav__cont__list__item {
+          margin-left: 0;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 
