@@ -1,4 +1,8 @@
-# Useful Links
+# Summary
+
+A repository or small-medium frontend projects to study & re-create for practice using semantics and html & css best practices and tricks
+
+## Useful Links
 
 * List of all [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 * [Resilient Web Design](https://resilientwebdesign.com) (Read)
