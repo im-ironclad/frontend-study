@@ -1,6 +1,6 @@
 # Summary
 
-A repository of small-medium frontend projects to study & re-create for practice using semantics and html & css best practices and tricks. I've created this repository to work in tandem and follow along with a new study group I've started in my local community. I'm trying to make it as generic as possible so others that simply view the repo from elsewhere will still be able to gain value from it.
+A repository of small-medium frontend projects to study & re-create for practice using semantics and html & css best practices and tricks. I've created this repository to work in tandem and follow along with a new study group I've started in my local community. I'm trying to make it as self-explanatory as possible so others that simply view the repo from elsewhere will still be able to gain value from it.
 
 ## Useful Links
 
