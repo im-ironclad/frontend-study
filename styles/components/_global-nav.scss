@@ -1,0 +1,10 @@
+$className: "global-nav";
+
+.#{$className} {
+  padding: $spacing-sm;
+  box-shadow: 0 2px 25px rgba(0,0,0,0.5);
+
+  &__list {
+    @include container("md");
+  }
+}
