@@ -2,15 +2,15 @@
 $className: 'main';
 
 .#{$className} {
-  @include container("lg");
+  @include container('lg');
   padding-top: $spacing-lg;
 
   @media only screen and (min-width: $screen-sm-min) {
-    @include container("md");
+    @include container('md');
   }
 
   @media only screen and (min-width: $screen-md-min) {
-    @include container("sm");
+    @include container('sm');
   }
 
   & section:not(:last-of-type) {

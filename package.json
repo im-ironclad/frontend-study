@@ -1,0 +1,14 @@
+{
+  "name": "frontend-study",
+  "version": "1.0.0",
+  "description": "A repository of small-medium frontend projects to study & re-create for practice using semantics and html & css best practices and tricks",
+  "main": "index.js",
+  "repository": "https://github.com/im-ironclad/frontend-study.git",
+  "author": "Adam Ironclad Wells",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @include font("body");
+  @include font('body');
   position: relative;
   overflow-x: hidden;
   min-width: $min-page-width;
@@ -78,14 +78,14 @@ a:focus {
 }
 
 h1 {
-  @include font("heading-lg");
+  @include font('heading-lg');
   margin-bottom: $spacing-md;
 }
 
 h2 {
-  @include font("heading");
+  @include font('heading');
 }
 
 h3 {
-  @include font("heading-sm")
+  @include font('heading-sm')
 }

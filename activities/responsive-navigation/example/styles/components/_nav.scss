@@ -95,7 +95,7 @@ $className: 'nav';
   }
 
   &__cont {
-    @include container("md");
+    @include container('md');
     display: none;
     height: 100%;
 

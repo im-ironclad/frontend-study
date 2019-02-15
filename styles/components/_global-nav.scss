@@ -1,10 +1,19 @@
-$className: "global-nav";
+$className: 'global-nav';
 
 .#{$className} {
-  padding: $spacing-sm;
+  padding-top: $spacing-sm;
+  padding-bottom: $spacing-sm;
   box-shadow: 0 2px 25px rgba(0,0,0,0.5);
 
   &__list {
-    @include container("md");
+    @include container('lg');
+
+    @media only screen and (min-width: $screen-sm-min) {
+      @include container('md');
+    }
+
+    @media only screen and (min-width: $screen-md-min) {
+      @include container('sm');
+    }
   }
 }

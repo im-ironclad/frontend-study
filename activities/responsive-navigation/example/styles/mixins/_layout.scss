@@ -3,17 +3,17 @@
  */
 
 // Default container is lg
-@mixin container($size: "lg") {
+@mixin container($size: 'lg') {
   width: $max-width-lg;
   max-width: $max-width-lg;
   margin-right: auto;
   margin-left: auto;
 
-  @if ($size=="sm") {
+  @if ($size=='sm') {
     width: $max-width-sm;
     max-width: $max-width-sm;
   }
-  @else if ($size=="md") {
+  @else if ($size=='md') {
     width: $max-width-md;
     max-width: $max-width-md;
   }
@@ -25,7 +25,7 @@
  */
 @mixin clear() {
   &:after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
   }
@@ -35,7 +35,7 @@
  * Base styles for a pseudo el
  */
 @mixin psuedoEl {
-  content: "";
+  content: '';
   display: block;
   visibility: visible;
   position: absolute;

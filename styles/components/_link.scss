@@ -1,4 +1,4 @@
-$className: "link";
+$className: 'link';
 
 .#{$className} {
   position: relative;
@@ -7,7 +7,7 @@ $className: "link";
   &:after {
     @include absolute($top: 0, $left: 0);
     z-index: -1;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     background-color: $color-primary;
