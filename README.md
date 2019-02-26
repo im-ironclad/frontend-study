@@ -47,6 +47,6 @@ A repository of small-medium frontend projects to study & re-create for practice
 ├── .index.html                # Index html page for the repo root
 ├── package.json               # Package config with scripts, list of dependencies etc.
 ├── README.md                  # Project README file
-├── yarn.lock                  # Yarn lock file
+└── yarn.lock                  # Yarn lock file
 
 ```
