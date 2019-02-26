@@ -16,3 +16,37 @@ A repository of small-medium frontend projects to study & re-create for practice
 * [Resilient Web Design](https://resilientwebdesign.com) (Read)
 * CSS Architecture [Original Inspiration (ITCSS)](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) -- [My Version](https://github.com/im-ironclad/ironclad-gulp-starterkit)
 * WCAG [Contrast Ratio](https://contrast-ratio.com/) Tool
+
+### Directory Structure
+
+```bash
+├── activities                 # Directory that holds all of the Activities
+│   └── responsive-navigation  # Directory for Activity 1: Responsive Navigation
+│       ├── example            # Directory with example code if you choose to reference it, try not to until you have to!
+│       ├── starter-files      # Directory with a basic file setup to get you started with the activity
+│       └── index.html         # Index html page for the Responsive Navigation activity
+├── styles                     # Directory with our main style Architecture (This affects everything but the activity example and starter files)
+│   ├── components             # Subdirectory with components
+│   │   ├── _activities.js     # Styles for activity pages
+│   │   ├── _global-nav.js     # Styles for the global nav
+│   │   ├── _helpful-links.js  # Styles for helpful-links list
+│   │   ├── _link.js           # Styles for anchor links
+│   │   └── _main.js           # Styles for the main element which holds all content
+│   ├── generic                # Subdirectory with generic reset(s)
+│   │   ├── _elements.scss     # Styles for our html elements (per project design, if applicable)
+│   │   └── _reset.scss        # Styles for resetting browser defaults
+│   ├── mixins                 # Subdirectory with mixins
+│   │   ├── _animations.scss   # Mixins for animations (currently empty)
+│   │   ├── _layout.scss       # Mixins for layout helpers (i.e. container() mixin)
+│   │   └── _typography.scss   # Mixins for typography helpers (i.e. font-size() mixin)
+│   ├── settings               # Subdirectory with variables used throughout our styles
+│   │   └── _variables.scss    # Styles for activity pages
+│   ├── app.css                # Compiled, final version of our SCSS
+│   └── app.scss               # Uncompiled, development SCSS
+├── .gitignore                 # gitignore
+├── .index.html                # Index html page for the repo root
+├── package.json               # Package config with scripts, list of dependencies etc.
+├── README.md                  # Project README file
+├── yarn.lock                  # Yarn lock file
+
+```
