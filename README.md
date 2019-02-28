@@ -17,6 +17,12 @@ A repository of small-medium frontend projects to study & re-create for practice
 * CSS Architecture [Original Inspiration (ITCSS)](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) -- [My Version](https://github.com/im-ironclad/ironclad-gulp-starterkit)
 * WCAG [Contrast Ratio](https://contrast-ratio.com/) Tool
 
+### Usage
+
+1. Fork & Clone the repository to your github account
+2. Simply open the index.html in the repository root to navigate through the repo and activities.
+3. When you want to start an activity, create a new branch *git ch -B {activity#}/{yourgithubusername}* (i.e. *git ch -B activity1/im-ironclad)
+
 ### Directory Structure
 
 ```bash
