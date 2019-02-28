@@ -25,7 +25,7 @@ A repository of small-medium frontend projects to study & re-create for practice
 * You will need a SCSS Compiler. Consider using [Koala](http://koala-app.com/) as it works on windows, linux and mac
 * You will need Git installed on your computer. If you prefer the command line consider using [this](https://git-scm.com/downloads). If you prefer a GUI (Graphical User Interface) then [Github Desktop](https://desktop.github.com/) is a great option.
 
-### Usage
+### Steps to Use
 
 1. Fork the repo to your github account.
 2. Clone the repo to your local computer, it doesn't matter where so choose your favorite spot.
