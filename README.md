@@ -22,7 +22,7 @@ A repository of small-medium frontend projects to study & re-create for practice
 1. Fork the repo to your github account.
 2. Clone the repo to your local computer, it doesn't matter where so choose your favorite spot.
 3. Simply open the index.html in the repo root to navigate through the repo and activities.
-4. When you want to start an activity, create a new branch `git ch -B {activity#}/{yourgithubusername}` (i.e. `git ch -B activity1/im-ironclad`).
+4. When you want to start an activity, create a new branch on your forked repository with `git checkout -B {activity#}/{yourgithubusername}` (i.e. `git checkout -B activity1/im-ironclad`).
 5. Once you've created the new branch, duplicate the starter-files directory in your desired activity and rename it to your github username (i.e. im-ironclad).
 6. If you want your completed work to be seen by others on the original repo, push your work to your forked repo and create a PR (Pull Request) to the original repo.
 
