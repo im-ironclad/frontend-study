@@ -17,6 +17,12 @@ A repository of small-medium frontend projects to study & re-create for practice
 * CSS Architecture [Original Inspiration (ITCSS)](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) -- [My Version](https://github.com/im-ironclad/ironclad-gulp-starterkit)
 * WCAG [Contrast Ratio](https://contrast-ratio.com/) Tool
 
+### Tools Required
+
+* You will need a text editor. The more popular ones are [VS Code](https://code.visualstudio.com/), [Atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [Brackets](http://brackets.io/)
+* You will need a SCSS Compiler. Consider using [Koala](http://koala-app.com/) as it works on windows, linux and mac
+* You will need Git installed on your computer. If you prefer the command line consider using [this](https://git-scm.com/downloads.). If you prefer a GUI (Graphical User Interface) then [Github Desktop](https://desktop.github.com/) is a great option.
+
 ### Usage
 
 1. Fork the repo to your github account.
