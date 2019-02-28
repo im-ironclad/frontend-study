@@ -40,7 +40,7 @@ A repository of small-medium frontend projects to study & re-create for practice
 │   │   ├── _layout.scss       # Mixins for layout helpers (i.e. container() mixin)
 │   │   └── _typography.scss   # Mixins for typography helpers (i.e. font-size() mixin)
 │   ├── settings               # Subdirectory with variables used throughout our styles
-│   │   └── _variables.scss    # Styles for activity pages
+│   │   └── _variables.scss    # Variables for our CSS regarding layout, spacing, colors and font styles
 │   ├── app.css                # Compiled, final version of our SCSS
 │   └── app.scss               # Uncompiled, development SCSS
 ├── .gitignore                 # gitignore
