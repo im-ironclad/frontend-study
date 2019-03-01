@@ -14,7 +14,15 @@
   <nav class="global-nav">
     <ul class="global-nav__list">
       <li class="global-nav__list__item">
-        <a href="/" class="link">Return home</a>
+        <a href="/" class="link">
+          Return home
+        </a>
+      </li>
+
+      <li class="global-nav__list__item">
+        <a href="../index.html" class="link">
+          Back
+        </a>
       </li>
     </ul>
   </nav>
@@ -22,31 +30,30 @@
   <header>
     <nav class="nav">
       <input type="checkbox" autocomplete="off" class="nav__trigger">
-      <div class="nav__hamburger">
+      <!-- TODO: Give explanation of why we use button but it's disabled -->
+      <button class="nav__hamburger" disabled>
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
-      <div class="nav__cont">
-        <ul class="nav__cont__list">
-          <li class="nav__cont__list__item">
-            <a href="/">Home</a>
-          </li>
+      <ul class="nav__cont__list">
+        <li class="nav__cont__list__item">
+          <a href="javascript:void(0)">Home</a>
+        </li>
 
-          <li class="nav__cont__list__item">
-            <a href="/about">About</a>
-          </li>
+        <li class="nav__cont__list__item">
+          <a href="javascript:void(0)">About</a>
+        </li>
 
-          <li class="nav__cont__list__item">
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <li class="nav__cont__list__item">
+          <a href="javascript:void(0)">Contact</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <!-- This script is entirely progressive. It is not necessary for the navbar to work but makes it a tad more full-proof and responsive while keeping the functionality within CSS -->
+  <!-- This script is entirely progressive. It is not necessary for the navbar to work but makes it a tad more full-proof and responsive while keeping the main chunk of functionality within CSS -->
   <script>
     // var trigger = document.querySelector('.nav__trigger');
     // var timeout = false;

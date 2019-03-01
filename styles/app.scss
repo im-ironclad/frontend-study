@@ -13,12 +13,11 @@
 
 // Set/Reset generic things
 @import 'generic/reset';
-@import 'generic/fonts';
 @import 'generic/elements';
 
 // Order alphabetically
 @import 'components/activities';
-@import 'components/link';
 @import 'components/global-nav';
-@import 'components/main';
 @import 'components/helpful-links';
+@import 'components/link';
+@import 'components/main';

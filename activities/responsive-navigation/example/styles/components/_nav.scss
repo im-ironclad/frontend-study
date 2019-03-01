@@ -45,28 +45,22 @@ $className: 'nav';
       }
     }
 
-    &:checked ~ .nav__cont {
+    &:checked ~ .nav__cont__list {
       @media only screen and (max-width: 500px) {
         position: absolute;
         top: 100px;
         left: 0;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
         max-width: 100%;
         padding: 5%;
         color: black;
-      }
 
-      & .nav__cont__list {
-        @media only screen and (max-width: 500px) {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          & .nav__cont__list__item {
-            margin-left: 0;
-            margin-bottom: 20px;
-          }
+        & .nav__cont__list__item {
+          margin-left: 0;
+          margin-bottom: 20px;
         }
       }
     }
@@ -95,25 +89,20 @@ $className: 'nav';
     }
   }
 
-  &__cont {
+  &__cont__list {
     @include container('md');
     display: none;
+    align-items: center;
     height: 100%;
 
     @media only screen and (min-width: 500px) {
-      display: block;
+      display: flex;
     }
 
-    &__list {
-      display: flex;
-      align-items: center;
-      height: inherit;
+    &__item {
 
-      &__item {
-
-        &:not(:first-of-type) {
-          margin-left: $spacing-lg;
-        }
+      &:not(:first-of-type) {
+        margin-left: $spacing-lg;
       }
     }
   }
