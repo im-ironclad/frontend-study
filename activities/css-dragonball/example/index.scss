@@ -1,0 +1,135 @@
+.dragonball-section {
+  
+  & .section__artboard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  & .dragonball {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 3px solid #e69900;
+    background-image: radial-gradient(#ffc600, #f09f00);
+
+    & .highlights {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      &__one, &__two, &__three,
+      &__four, &__five {
+        position: absolute;
+        border-radius: 75%;
+      }
+
+      &__one {
+        top: 85px;
+        left: 0px;
+        width: 70px;
+        height: 40px;
+        transform: rotate(-70deg);
+        background-image: linear-gradient(0.6turn, rgba(260,260,260,0.8), rgba(260,260,260,0.2));
+      }
+
+      &__two {
+        top: 20px;
+        left: 50px;
+        width: 100px;
+        height: 60px;
+        transform: rotate(-20deg);
+        background-image: linear-gradient(0.4turn, rgba(260,260,260,0.9), rgba(260,260,260,0));
+      }
+
+      &__three {
+        top: 95px;
+        right: 10px;
+        width: 110px;
+        height: 70px;
+        transform: rotate(65deg);
+        background: rgba(260,260,260,0.5);
+        filter: blur(10px);
+      }
+
+      &__four {
+        top: 220px;
+        right: 33px;
+        width: 45px;
+        height: 25px;
+        transform: rotate(-45deg);
+        background: linear-gradient(0turn, rgba(260,260,260,0.9), rgba(260,260,260,0.1));
+        filter: blur(3px);
+      }
+
+      &__five {
+        top: 245px;
+        right: 70px;
+        width: 70px;
+        height: 35px;
+        transform: rotate(-15deg);
+        background: linear-gradient(-0.05turn, #fff, rgba(260,260,260,0));
+        filter: blur(3px);
+      }
+    }
+
+    & .star {
+      position: absolute;
+      top: 40%;
+      left: 17.5%;
+      display: block;
+      color: red;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg) scale(0.25);
+
+      &:before {
+        border-bottom: 80px solid red;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -45px;
+        left: -65px;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        color: red;
+        top: 3px;
+        left: -105px;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid red;
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+        content: '';
+      }
+    }
+  }
+
+  & .shadow {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 275px;
+    height: 60px;
+    border-radius: 50%;
+    filter: blur(15px);
+    transform: translateX(-50%);
+    background-image: radial-gradient(darken(#ffc600, 40%), orange);
+  }
+}
