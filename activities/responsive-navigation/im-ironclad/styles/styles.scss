@@ -1,0 +1,23 @@
+/**
+ * Entry point:
+ * styles/styles.scss
+ * 
+ * Based off of ITCSS Architecture: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ * With a few personal changes
+ */
+@import "settings/variables";
+
+// Others must come after layout in order to call layout mixins
+@import "mixins/layout";
+@import "mixins/animations";
+@import "mixins/typography";
+
+// Set/Reset generic things
+@import "generic/reset";
+@import "generic/fonts";
+@import "generic/elements";
+
+// Components, Order alphabetically
+@import "components/main";
+
+// Include any vendor file(s)

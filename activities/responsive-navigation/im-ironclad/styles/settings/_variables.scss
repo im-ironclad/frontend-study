@@ -1,0 +1,49 @@
+/**
+ * Breakpoints
+ * - These should typically stay the same unless the design is specific
+ */
+$screen-sm-min: 768px;
+$screen-xs-max: $screen-sm-min - 1;
+$screen-md-min: 992px;
+$screen-sm-max: $screen-md-min - 1;
+$screen-lg-min: 1250px;
+$screen-md-max: $screen-lg-min - 1;
+$screen-xl-min: 1500px;
+$screen-lg-max: $screen-xl-min - 1;
+
+/**
+ * Spacing
+ * - You can adjust these however you would like or the design requires
+ */
+$spacing-xs: 10px;
+$spacing-sm: 20px;
+$spacing-rg: 50px;
+$spacing-lg: 100px;
+$spacing-xl: 150px;
+
+/**
+ * Layout
+ * - These are examples, you can create whatever
+ * variables you would like or that the design requires
+ */
+$min-page-width: 320px; // This should always be 320px, minimum phone size
+$max-page-width: 1900px; // This can be whatever you want (i.e. 1200px or 1440px)
+$width-sm: 750px;
+$width-reg: 1000px;
+$width-lg: 1440px;
+$max-width: 90%;
+$gutter: 5%;
+
+/**
+ * Colors
+ * - These are typically per the design
+ */
+$color-white: #ffffff;
+$color-offwhite: #f2f2f2;
+$color-grey: #777777;
+$color-grey-dark: #333333;
+
+/* Font */
+$font-family-primary: "Roboto", Helvetica, Arial, sans-serif;
+$font-regular: 400;
+$font-bold: 700;
