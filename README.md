@@ -46,8 +46,8 @@ A repository of small-medium frontend projects to study & re-create for practice
 │   │   ├── starter-files      # Directory with a basic file setup to get you started with the activity
 │   │   └── index.html         # Index html page for the Responsive Navigation activity
 │   └── css-dragonball         # Directory for Activity 2: CSS Dragonball
-│       ├── example            # Directory with example code if you choose to reference it, try not to until you have to!
-│       └── index.html         # Index html page for the CSS Dragonball activity
+│   │   ├── example            # Directory with example code if you choose to reference it, try not to until you have to!
+│   │   └── index.html         # Index html page for the CSS Dragonball activity
 │   └── scss-and-bem           # Directory for Activity 3: Learn SCSS and BEM
 │       ├── example            # Directory with example code if you choose to reference it, try not to until you have to!
 │       ├── starter-files      # Directory with a basic file setup to get you started with the activity
