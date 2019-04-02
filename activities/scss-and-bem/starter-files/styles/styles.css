@@ -1,0 +1,140 @@
+/**
+ * INDEX
+ * 
+ * 1) .content
+ * 2) .loop-blocks
+ * 3) .card-list
+ */
+
+/* A little bit of reset (ignore this) */
+.content > * {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
+
+/* CONTENT */
+.content {
+  width: 1000px;
+  max-width: 90%;
+  height: auto;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* LOOP BLOCKS */
+.loop-blocks {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.loop-blocks__block {
+  display: block;
+  width: 100%;
+  height: 20%;
+}
+
+.loop-blocks__block:nth-of-type(1) {
+  background-color: rgba(0, 260, 0, 1);
+}
+.loop-blocks__block:nth-of-type(2) {
+  background-color: rgba(0, 240, 0, 1);
+}
+.loop-blocks__block:nth-of-type(3) {
+  background-color: rgba(0, 220, 0, 1);
+}
+.loop-blocks__block:nth-of-type(4) {
+  background-color: rgba(0, 200, 0, 1);
+}
+.loop-blocks__block:nth-of-type(5) {
+  background-color: rgba(0, 180, 0, 1);
+}
+
+/* CARD LIST */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 100px;
+}
+
+.card-list__item {
+  cursor: pointer;
+  overflow: hidden;
+  list-style: none;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.25),
+    0 10px 20px rgba(0,0,0,0.35);
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+/* Only want this hover effect on larger devices */
+@media only screen and (min-width: 768px) {
+  .card-list__item:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    transform: perspective(500px) scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-list__item {
+    width: 47.5%;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .card-list__item {
+    width: 100%;
+  }
+}
+
+.card-list__item__fig {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+ /* 101% width/height to prevent tiny bug on figure image
+ *  Change to 100% and you should/might see the bug on the first card's image while hovering
+ */
+.card-list__item__fig__img {
+  width: 101%;
+  height: 101%;
+  object-fit: cover;
+}
+
+.card-list__item__title,
+.card-list__item__body {
+  color: #333;
+}
+
+.card-list__item__title {
+  letter-spacing: 0px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-list__item__title--important {
+  letter-spacing: 0px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+.card-list__item__body {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}

@@ -1,0 +1,159 @@
+/**
+ * INDEX
+ * 
+ * # Variables
+ * # Mixins
+ *
+ * 1) .content
+ * 2) .loop-blocks
+ * 3) .card-list
+ */
+
+// A little bit of reset (ignore this)
+.content * {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
+
+// Color Variables
+$color-grey: #333;
+$color-green: green;
+
+// Spacing Variables
+$spacing-sm: 15px;
+$spacing-lg: 100px;
+
+// Margin Mixin for centering horizontally
+@mixin marginMiddle() {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin padding(
+  $top: null, 
+  $right: null, 
+  $bottom: null, 
+  $left: null, 
+  $padAll: null
+) {
+  @if ($padAll) {
+    padding: $padAll
+  } @else {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+}
+
+@mixin font($size: 16px, $bold: false) {
+  font-size: $size;
+  @if ($bold) {
+    font-weight: bold;
+  }
+}
+
+/* CONTENT */
+.content {
+  @include marginMiddle;
+  width: 1000px;
+  max-width: 90%;
+  height: auto;
+  margin-top: $spacing-lg;
+}
+
+/* LOOP BLOCKS */
+.loop-blocks {
+  width: 100%;
+  height: 250px;
+  margin-bottom: $spacing-lg;
+
+  &__block {
+    display: block;
+    width: 100%;
+    height: 20%;
+
+    $firstColor: 180;
+    @for $i from 1 through 5 {
+      &:nth-last-of-type(#{$i}) {
+        background-color: rgb(0, $firstColor, 0);
+      }
+      $firstColor: $firstColor + 20;
+    }
+  }
+}
+
+/* CARD LIST */
+.card-list {
+  @include marginMiddle;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: $spacing-lg;
+
+  &__item {
+    cursor: pointer;
+    overflow: hidden;
+    list-style: none;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:
+      0 $spacing-sm 35px rgba(0,0,0,0.25),
+      0 10px 20px rgba(0,0,0,0.35);
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+
+    /* Only want this hover effect on larger devices */
+    &:hover {
+      @media only screen and (min-width: 768px) {
+        box-shadow: 0 $spacing-sm 35px rgba(0,0,0,0.25);
+        transform: perspective(500px) scale(1.025);
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      width: 47.5%;
+      margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+
+    &__fig {
+      display: block;
+      width: 100%;
+      height: 200px;
+
+      /* 101% width/height to prevent tiny bug on figure image
+      ** Change to 100% and you should/might see the bug on the first card's image while hovering */
+      &__img {
+        width: 101%;
+        height: 101%;
+        object-fit: cover;
+      }
+    }
+
+    &__title,
+    &__body {
+      color: $color-grey;
+    }
+
+    &__title {
+      @include font(20px, true);
+      @include padding($padAll: $spacing-sm);
+
+      &--important {
+        @extend .card-list__item__title;
+        color: $color-green;
+      }
+    }
+
+    &__body {
+      @include padding(0px, $spacing-sm, $spacing-sm, $spacing-sm);
+    }
+  }
+}
