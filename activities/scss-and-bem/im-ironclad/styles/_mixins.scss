@@ -1,0 +1,24 @@
+/**
+ * Mixins
+ */
+@mixin marginMiddle() {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin padding (
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto,
+  $allSides: null
+) {
+  @if ($allSides != null) {
+    padding: $allSides
+  } @else {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+}

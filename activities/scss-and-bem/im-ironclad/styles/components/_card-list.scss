@@ -1,0 +1,79 @@
+/* CARD LIST */
+.card-list {
+  @include marginMiddle();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: $spacing-lg;
+
+  &__item {
+    cursor: pointer;
+    overflow: hidden;
+    list-style: none;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:
+      0 $spacing-sm 35px rgba(0,0,0,0.25),
+      0 10px $spacing-md rgba(0,0,0,0.35);
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+
+    /* Only want this hover effect on larger devices */
+    @media only screen and (min-width: 768px) {
+      &:hover {
+        box-shadow: 0 $spacing-sm 35px rgba(0,0,0,0.25);
+        transform: perspective(500px) scale(1.05);
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        width: 47.5%;
+        margin-bottom: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 750px) {
+      & {
+        width: 100%;
+      }
+    }
+
+    &__fig {
+      display: block;
+      width: 100%;
+      height: 200px;
+      
+      /* 101% width/height to prevent tiny bug on figure image
+      *  Change to 100% and you should/might see the bug on the first card's image while hovering
+      */
+      &__img {
+        width: 101%;
+        height: 101%;
+        object-fit: cover;
+      }
+    }
+
+    &__title,
+    &__body {
+      color: $color-grey;
+    }
+
+    &__title {
+      @include padding($allSides: $spacing-sm);
+      letter-spacing: 0px;
+      font-size: $spacing-md;
+      font-weight: bold;
+
+      &--important {
+        @extend .card-list__item__title;
+        color: $color-green;
+      }
+    }
+
+    &__body {
+      @include padding($right: $spacing-sm, $bottom: $spacing-sm, $left: $spacing-sm);
+    }
+  }
+}
