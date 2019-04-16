@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Creating and Styling Forms</title>
+
+  <link rel="stylesheet" href="../../../styles/app.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Global Nav -->
+  <nav class="global-nav">
+    <ul class="global-nav__list">
+      <li class="global-nav__list__item">
+        <a href="../../../index.html" class="link">
+          Return home
+        </a>
+      </li>
+
+      <li class="global-nav__list__item">
+        <a href="../index.html" class="link">
+          Back
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="main">
+    <h1>
+      Hi take my form!
+    </h1>
+    
+    <form action="#" method="POST" class="form">
+      <div class="form__group">
+        <label for="fullName" class="form__group__label">
+          Full Name
+        </label>
+        
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          class="form__group__input"
+          required />
+      </div>
+
+      <div class="form__group">
+        <label for="email" class="form__group__label">
+          Email Address
+        </label>
+        
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form__group__input"
+          required />
+      </div>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset__legend">
+          What's your skillset?
+        </legend>
+
+        <div class="form__fieldset__chkbx-group">
+          <label for="skill_html" class="form__fieldset__chkbx-group__label">HTML</label>
+
+          <input
+            type="checkbox"
+            name="skill_html"
+            id="skill_html"
+            class="form__fieldset__chkbx-group__input" />
+        </div>
+
+        <div class="form__fieldset__chkbx-group">
+          <label for="skill_css" class="form__fieldset__chkbx-group__label">CSS</label>
+
+          <input
+            type="checkbox"
+            name="skill_css"
+            id="skill_css"
+            class="form__fieldset__chkbx-group__input" />
+        </div>
+
+        <div class="form__fieldset__chkbx-group">
+          <label for="skill_javascript" class="form__fieldset__chkbx-group__label">Javascript</label>
+
+          <input
+            type="checkbox"
+            name="skill_javascript"
+            id="skill_javascript"
+            class="form__fieldset__chkbx-group__input" />
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset__legend">
+          Rate my Form
+        </legend>
+
+        <div class="form__fieldset__radio-group">
+          <label for="formRating" class="form__fieldset__radio-group__label">1</label>
+
+          <input
+            type="radio"
+            name="formRating"
+            id="formRating"
+            class="form__fieldset__radio-group__input" />
+        </div>
+
+        <div class="form__fieldset__radio-group">
+          <label for="formRating" class="form__fieldset__radio-group__label">2</label>
+
+          <input
+            type="radio"
+            name="formRating"
+            id="formRating"
+            class="form__fieldset__radio-group__input" />
+        </div>
+
+        <div class="form__fieldset__radio-group">
+          <label for="formRating" class="form__fieldset__radio-group__label">3</label>
+
+          <input
+            type="radio"
+            name="formRating"
+            id="formRating"
+            class="form__fieldset__radio-group__input" />
+        </div>
+
+        <div class="form__fieldset__radio-group">
+          <label for="formRating" class="form__fieldset__radio-group__label">4</label>
+
+          <input
+            type="radio"
+            name="formRating"
+            id="formRating"
+            class="form__fieldset__radio-group__input" />
+        </div>
+
+        <div class="form__fieldset__radio-group">
+          <label for="formRating" class="form__fieldset__radio-group__label">5</label>
+
+          <input
+            type="radio"
+            name="formRating"
+            id="formRating"
+            class="form__fieldset__radio-group__input" />
+        </div>
+      </fieldset>
+
+      <button disabled type="submit" class="form__btn-submit">
+        Submit
+      </button>
+    </form>
+  </section>
+</body>
+</html>
