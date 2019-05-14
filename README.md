@@ -16,6 +16,7 @@ A repository of small-medium frontend projects to study & re-create for practice
 
 * List of all [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 * [Resilient Web Design](https://resilientwebdesign.com) (Read)
+* [Introduction to Aria](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/) via Google
 * CSS Architecture [Original Inspiration (ITCSS)](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) -- [My Version](https://github.com/im-ironclad/scss-architecture)
 * CSS Naming Methodology: [BEM (Block Element Modifier)](http://getbem.com/introduction/)
 * WCAG [Contrast Ratio](https://contrast-ratio.com/) Tool
