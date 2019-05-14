@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Navigation</title>
+
+  <link rel="stylesheet" href="../../../styles/app.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <!-- Global Nav -->
+  <nav class="global-nav">
+    <ul class="global-nav__list">
+      <li class="global-nav__list__item">
+        <a href="../../../index.html" class="link">
+          Return home
+        </a>
+      </li>
+
+      <li class="global-nav__list__item">
+        <a href="../index.html" class="link">
+          Back
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <nav class="nav">
+      <input type="checkbox" autocomplete="off" class="nav__trigger" role="" aria-label="menu-trigger">
+      <!-- TODO: Give explanation of why we use button but it's disabled -->
+      <button class="nav__hamburger" disabled aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="main-nav" class="nav__cont__list" aria-label="menu">
+        <li class="nav__cont__list__item">
+          <!-- This tiny bit of js is an inline way to preventDefault -->
+          <a href="javascript:void(0)">Home</a>
+        </li>
+
+        <li class="nav__cont__list__item">
+          <a href="javascript:void(0)">About</a>
+        </li>
+
+        <li class="nav__cont__list__item">
+          <a href="javascript:void(0)">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- This script is entirely progressive. It is not necessary for the navbar to work but makes it a tad more full-proof and responsive while keeping the main chunk of functionality within CSS -->
+  <script>
+    // var trigger = document.querySelector('.nav__trigger');
+    // var timeout = false;
+    // var delay = 250;
+
+    // var resetTriggerStatus = function(currentWidth) {
+    //   if (currentWidth > 500 && trigger.checked === true) {
+    //     trigger.checked = false;
+    //   }
+    // }
+
+    // window.addEventListener('resize', function(e) {
+    //   clearTimeout(timeout);
+    //   timeout = setTimeout(function() {
+    //     var currentWidth = e.target.innerWidth;
+    //     resetTriggerStatus(currentWidth);
+    //   }, delay);
+    // })
+  </script>
+</body>
+</html>

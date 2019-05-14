@@ -1,0 +1,100 @@
+/**
+ * Layout Mixins
+ */
+
+// Default container is lg
+@mixin container($size: 'lg') {
+  width: $max-width-lg;
+  max-width: $max-width-lg;
+  margin-right: auto;
+  margin-left: auto;
+
+  @if ($size=='sm') {
+    width: $max-width-sm;
+    max-width: $max-width-sm;
+  }
+  @else if ($size=='md') {
+    width: $max-width-md;
+    max-width: $max-width-md;
+  }
+  //@include clear; //uncomment and use this mixin to clear floats when using float layouts
+}
+
+/**
+ * Adds :after pseudo el and clears both
+ */
+@mixin clear() {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/**
+ * Base styles for a pseudo el
+ */
+@mixin psuedoEl {
+  content: '';
+  display: block;
+  visibility: visible;
+  position: absolute;
+}
+
+/**
+ * Creates spacing | Vertical
+ */
+@mixin spacing($space: $spacing-md) {
+  padding-top: $space;
+  padding-bottom: $space;
+}
+
+/**
+ * Creates padding | Horizontal
+ */
+@mixin padding($pad: $indent-sm) {
+  padding-right: $pad;
+  padding-left: $pad;
+}
+
+/**
+ * Position Absolute base styles
+ */
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/**
+ * Base styles for centering with positioning
+ */
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+/**
+ * Mixin for a full size overlay, or mask etc.
+ */
+@mixin fullOverlay($center: false) {
+  @include centerer($center, $center);
+  width: 100%;
+  height: 100%;
+}

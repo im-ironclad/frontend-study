@@ -1,0 +1,109 @@
+// DELETE ME IF YOU DON'T WANT A MAIN COMPONENT
+$className: 'nav';
+
+.#{$className} {
+  position: relative;
+  min-width: 320px;
+  height: 100px;
+  color: $color-white;
+  background-color: $color-grey-dark;
+
+  &__trigger {
+    @include centerer(false, true);
+    cursor: pointer;
+    left: 5%;
+    z-index: 3;
+    appearance: none;
+    outline: 0;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+
+    @media only screen and (min-width: 500px) {
+      display: none;
+    }
+
+    & ~ .nav__hamburger span {
+      transition: all ease-in-out 0.3s;
+    }
+
+    &:checked ~ .nav__hamburger span {
+      // Selects middle (2nd) span
+      &:nth-of-type(2) {
+        opacity: 0;
+        display: none;
+        transition-delay: display 0.2s;
+      }
+
+      // Transform 1st and 3rd
+      &:nth-of-type(1) {
+        transform: translateY(150%) rotate(45deg);
+      }
+
+      &:nth-of-type(3) {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+
+    &:checked ~ .nav__cont__list {
+      @media only screen and (max-width: 500px) {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        padding: 5%;
+        color: black;
+
+        & .nav__cont__list__item {
+          margin-left: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &__hamburger {
+    @include centerer(false, true);
+    cursor: pointer;
+    left: 5%;
+    width: 25px;
+    height: 25px;
+
+    @media only screen and (min-width: 500px) {
+      display: none;
+    }
+
+    & span {
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: $color-grey;
+
+      &:not(:first-of-type) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__cont__list {
+    @include container('md');
+    display: none;
+    align-items: center;
+    height: 100%;
+
+    @media only screen and (min-width: 500px) {
+      display: flex;
+    }
+
+    &__item {
+
+      &:not(:first-of-type) {
+        margin-left: $spacing-lg;
+      }
+    }
+  }
+}
